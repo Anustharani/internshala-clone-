@@ -35,12 +35,12 @@ router.post("/send", async (req, res) => {
       const mailOptions = {
         from: process.env.EMAIL_USER,
         to: email,
-        subject: "InternArea - French Language Switch Verification OTP",
+        subject: "InternArea -Language Switch Verification OTP",
         html: `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 10px;">
             <h2 style="color: #2563eb; text-align: center;">InternArea Email Verification</h2>
             <p>Hello,</p>
-            <p>You requested to change the website language to <strong>French</strong>. For security purposes, please verify your email using the following One-Time Password (OTP):</p>
+            <p>You requested to change the website language. For security purposes, please verify your email using the following One-Time Password (OTP):</p>
             <div style="text-align: center; margin: 30px 0;">
               <span style="font-size: 32px; font-weight: bold; letter-spacing: 5px; color: #1e3a8a; background-color: #eff6ff; padding: 10px 20px; border-radius: 5px; border: 1px dashed #2563eb;">${otp}</span>
             </div>
