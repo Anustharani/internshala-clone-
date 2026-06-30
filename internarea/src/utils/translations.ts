@@ -56,7 +56,7 @@ export const translations: Record<Language, Record<string, string>> = {
 
     // OTP Modal
     otp_modal_title: "Verification Required",
-    otp_modal_desc: "To switch the website language to French, please verify your email address via an OTP.",
+    otp_modal_desc: "To switch the website language, please verify your email address via an OTP.",
     otp_enter_email: "Enter your email address",
     otp_send_btn: "Send OTP",
     otp_enter_code: "Enter 6-digit OTP",
@@ -118,7 +118,7 @@ export const translations: Record<Language, Record<string, string>> = {
 
     // OTP Modal
     otp_modal_title: "Verificación requerida",
-    otp_modal_desc: "Para cambiar el idioma del sitio web a francés, verifique su dirección de correo electrónico mediante un OTP.",
+    otp_modal_desc: "Para cambiar el idioma del sitio web, verifique su dirección de correo electrónico mediante un OTP.",
     otp_enter_email: "Introduce tu correo electrónico",
     otp_send_btn: "Enviar OTP",
     otp_enter_code: "Introduce el OTP de 6 dígitos",
@@ -180,7 +180,7 @@ export const translations: Record<Language, Record<string, string>> = {
 
     // OTP Modal
     otp_modal_title: "सत्यापन आवश्यक",
-    otp_modal_desc: "वेबसाइट की भाषा को फ्रेंच में बदलने के लिए, कृपया ओटीपी के माध्यम से अपना ईमेल पता सत्यापित करें।",
+    otp_modal_desc: "वेबसाइट की भाषा बदलने के लिए, कृपया ओटीपी के माध्यम से अपना ईमेल पता सत्यापित करें।",
     otp_enter_email: "अपना ईमेल पता दर्ज करें",
     otp_send_btn: "ओटीपी भेजें",
     otp_enter_code: "6 अंकों का ओटीपी दर्ज करें",
@@ -242,7 +242,7 @@ export const translations: Record<Language, Record<string, string>> = {
 
     // OTP Modal
     otp_modal_title: "Verificação necessária",
-    otp_modal_desc: "Para alterar o idioma do site para francês, verifique seu endereço de e-mail usando um OTP.",
+    otp_modal_desc: "Para alterar o idioma do site, verifique seu endereço de e-mail usando um OTP.",
     otp_enter_email: "Insira seu endereço de e-mail",
     otp_send_btn: "Enviar OTP",
     otp_enter_code: "Insira o OTP de 6 dígitos",
@@ -304,7 +304,7 @@ export const translations: Record<Language, Record<string, string>> = {
 
     // OTP Modal
     otp_modal_title: "需要验证",
-    otp_modal_desc: "要将网站语言切换为法语，请通过验证码验证您的电子邮件地址。",
+    otp_modal_desc: "要切换网站语言，请通过验证码验证您的电子邮件地址。",
     otp_enter_email: "输入您的电子邮件地址",
     otp_send_btn: "发送验证码",
     otp_enter_code: "输入6位验证码",
@@ -366,7 +366,7 @@ export const translations: Record<Language, Record<string, string>> = {
 
     // OTP Modal
     otp_modal_title: "Vérification requise",
-    otp_modal_desc: "Pour changer la langue du site en français, veuillez vérifier votre adresse e-mail via un code OTP.",
+    otp_modal_desc: "Pour changer la langue du site, veuillez vérifier votre adresse e-mail via un code OTP.",
     otp_enter_email: "Entrez votre adresse e-mail",
     otp_send_btn: "Envoyer l'OTP",
     otp_enter_code: "Entrez l'OTP à 6 chiffres",

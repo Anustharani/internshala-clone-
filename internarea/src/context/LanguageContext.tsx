@@ -49,24 +49,20 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   }, [currentUser]);
 
   const setLanguage = (lang: Language) => {
-    if (lang === "fr") {
-      // Trigger French validation flow
-      setPendingLanguage(lang);
-      setIsModalOpen(true);
-      // Pre-fill email from current user state again to ensure freshness
-      if (currentUser?.email) {
-        setEmail(currentUser.email);
-      } else {
-        setEmail("");
-      }
-      setOtp("");
-      setIsOtpSent(false);
-    } else {
-      // Direct update for other languages
-      setLanguageState(lang);
-      localStorage.setItem("site_language", lang);
-      toast.success(`Language changed to ${lang.toUpperCase()}`);
+    if (lang === language) {
+      return;
     }
+    // Trigger validation flow for all language changes
+    setPendingLanguage(lang);
+    setIsModalOpen(true);
+    // Pre-fill email from current user state again to ensure freshness
+    if (currentUser?.email) {
+      setEmail(currentUser.email);
+    } else {
+      setEmail("");
+    }
+    setOtp("");
+    setIsOtpSent(false);
   };
 
   const t = (key: string): string => {
@@ -115,7 +111,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
         if (pendingLanguage) {
           setLanguageState(pendingLanguage);
           localStorage.setItem("site_language", pendingLanguage);
-          toast.success("Email verified! Language switched to French.");
+          toast.success(`Email verified! Language switched to ${pendingLanguage.toUpperCase()}.`);
         }
         handleCloseModal();
       } else {
