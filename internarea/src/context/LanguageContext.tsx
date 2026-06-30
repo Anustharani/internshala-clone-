@@ -18,7 +18,7 @@ const getApiUrl = (path: string) => {
   const base =
     typeof window !== "undefined" && window.location.hostname === "localhost"
       ? "http://localhost:5000/api"
-      : `${process.env.NEXT_PUBLIC_API_URL || "${process.env.NEXT_PUBLIC_API_URL || "https://internshala-clone-y2p2.onrender.com/api"}"}`;
+      : (process.env.NEXT_PUBLIC_API_URL || "https://internshala-clone-y2p2.onrender.com/api");
   return `${base}${path}`;
 };
 
